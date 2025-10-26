@@ -281,9 +281,9 @@ async function handleRequest(request, env) {
   if (request.method === "POST" && path === "/api/upload") return handleUpload(request, env);
 
   // Pages
-  if (request.method === "GET" && path === "/") return html(renderHome(env));
-  if (request.method === "GET" && path === "/terms") return html(renderPolicy("terms", env));
-  if (request.method === "GET" && path === "/privacy") return html(renderPolicy("privacy", env)));
+ if (request.method === "GET" && path === "/") return html(renderHome(env));
+if (request.method === "GET" && path === "/terms") return html(renderPolicy("terms", env));
+if (request.method === "GET" && path === "/privacy") return html(renderPolicy("privacy", env));
 
   if (request.method === "GET" && path.startsWith("/f/")) return handleFriendlyPage(request, env);
   if (request.method === "GET" && path.startsWith("/d/")) return handleDownload(request, env);
